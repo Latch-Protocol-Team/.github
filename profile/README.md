@@ -67,7 +67,7 @@ Listing your launchpad, DEX or Latch in the ecosystem is an [issue form](https:/
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/powered-by-latch-dark.svg">
-    <img src="assets/powered-by-latch-light.svg" alt="Powered by Latch" height="36">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/powered-by-latch-dark.png">
+    <img src="assets/powered-by-latch-light.png" alt="Powered by Latch" height="36">
   </picture>
 </p>

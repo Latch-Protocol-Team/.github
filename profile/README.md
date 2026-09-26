@@ -53,6 +53,16 @@ Both site kinds are created from the app in one transaction and read everything 
 - **Admin keys that cannot hurt you.** Immutable contracts, two-step ownership with `renounceOwnership` disabled, delays that scale with how hard an action is to undo, and no key anywhere that can move a user's funds.
 - **Latch has no token.** There is nothing to buy; the protocol earns from the fees its contracts enforce.
 
+## What's next
+
+In the order it arrives, with no dates attached. Everything here is a direction, not a promise.
+
+- **Best-price routing, free through Latch pools.** A trade is quoted across venues and filled wherever it fills best. Routing through a Latch pool costs nothing extra; the fee applies only to a fill somewhere else, and it is read from the contract, never set by the app.
+- **A quote and swap API for integrators.** The same routing behind an API and the SDK: ask for a quote, get back a transaction that has already been simulated. The fee is its own line in the quote, never folded into the price, and the backend never touches the trader's funds.
+- **The `latch` command line.** One command with a guided stepper for the builder's first hour: scaffold a site, create a Launchpad, run a launch market-cap first, lock, airdrop, split. Every flow simulates before it offers to sign, and none of them ever asks for a raw private key.
+- **Buy inside the launch transaction**, so a creator's first buy is not a race against the mempool.
+- **More chains.** The same contracts at the same addresses per chain, with no bridge anywhere in the protocol path.
+
 ## Repositories
 
 | Repository | What it is | Licence |

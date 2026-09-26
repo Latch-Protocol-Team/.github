@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://latches.fun">
-    <img src="assets/github-og-1280x640.png" alt="Latch Protocol — launch a DEX or a launchpad on a shared, verified core" width="100%">
+    <img src="assets/github-og-1280x640.png" alt="Latch Protocol — hooks for a bigger ecosystem. latches.fun" width="100%">
   </a>
 </p>
 
@@ -74,6 +74,9 @@ In the order it arrives, with no dates attached. Everything here is a direction,
 The core is a GPL-2.0-or-later derivative of the Infinity architecture (`pancakeswap/infinity-core`), extended and hardened; Latch runs only on its own deployments and is not affiliated with any other protocol. The SDK, widgets and site template are independently authored and MIT, so nothing you ship on Latch has to inherit the GPL.
 
 ## Ship on Latch
+
+<img src="assets/golem-guard-512.png" alt="The Lock Knight, Latch's mascot" width="160" align="right">
+
 
 Two ways in, both from the app — open today on the [testnet site](https://testnet.latches.fun/app), where the same code runs against a public testnet and the tokens have no value:
 

@@ -16,9 +16,10 @@ Launch a DEX or a launchpad from one config file, on a core that is already depl
 
 <p align="center">
   <a href="https://latches.fun">Site</a> ·
-  <a href="https://latches.fun/docs">Docs</a> ·
+  <a href="https://docs.latches.fun">Docs</a> ·
   <a href="https://testnet.latches.fun/app">Try the app</a> ·
   <a href="https://latches.fun/ecosystem">Ecosystem</a> ·
+  <a href="https://github.com/Latch-Protocol-Team/latch-contracts">Contracts</a> ·
   <a href="https://github.com/Latch-Protocol-Team/latch-sdk">SDK</a> ·
   <a href="https://github.com/Latch-Protocol-Team/dex-tokenl-list">Token list</a>
 </p>
@@ -67,6 +68,7 @@ In the order it arrives, with no dates attached. Everything here is a direction,
 
 | Repository | What it is | Licence |
 |---|---|---|
+| [`latch-contracts`](https://github.com/Latch-Protocol-Team/latch-contracts) | The contracts a Latch is built against: the core and the base contracts a hook extends. The scaffolder fetches it for you | GPL-2.0-or-later |
 | [`latch-sdk`](https://github.com/Latch-Protocol-Team/latch-sdk) | TypeScript SDK: deployments, reads, launch building, market data, token lists — the MIT surface every integration builds against | MIT |
 | [`dex-tokenl-list`](https://github.com/Latch-Protocol-Team/dex-tokenl-list) | The Latch token list, in the standard Token Lists schema, generated and verified on chain | MIT |
 | `.github` | This profile, and the [ecosystem listing form](https://github.com/Latch-Protocol-Team/.github/issues/new/choose) | — |
@@ -81,11 +83,13 @@ The core is a GPL-2.0-or-later derivative of the Infinity architecture (`pancake
 Two ways in, both from the app — open today on the [testnet site](https://testnet.latches.fun/app), where the same code runs against a public testnet and the tokens have no value:
 
 1. **Hosted** — build a launchpad or a DEX in the app, pick a theme, set your fee wallet and terms, sign one transaction. Your site is live at `/p/<address>` and can be served from your own domain.
-2. **Self-hosted** — take the MIT site template (`create-latch-dex`), set the fee wallet and the chain in `latch.config.ts`, restyle if you like, deploy. It runs against the shared core and needs no Solidity of your own.
+2. **Self-hosted** — take the MIT site template (`npm create @latchprotocol/app`), set the fee wallet and the chain in `latch.config.ts`, restyle if you like, deploy. It runs against the shared core and needs no Solidity of your own.
 
 Either way the launchpad you build inherits the venue: one aggregator integration per chain covers every pool on it, so your launches are indexed on day one without any work of yours.
 
-The [docs](https://latches.fun/docs) cover both, contract by contract.
+The [docs](https://docs.latches.fun) cover both, contract by contract.
+
+**Building your own Latch?** Start from [`latch-contracts`](https://github.com/Latch-Protocol-Team/latch-contracts): one command scaffolds a project that builds and passes its tests on the first run.
 
 Listing your launchpad, DEX or Latch in the ecosystem is an [issue form](https://github.com/Latch-Protocol-Team/.github/issues/new/choose), and the listing is read back from the chain before it is shown.
 
